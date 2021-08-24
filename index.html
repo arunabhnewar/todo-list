@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <!---font awesome----------------->
+    <script src="https://kit.fontawesome.com/4fa42c0453.js" crossorigin="anonymous"></script>
+
+    <!--css stylesheet------------------->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--header start------------>
+    <header>
+        <!---heading------------>
+        <h1 class="heading"><span class="name">Arunabh's</span> Todo List</h1>
+    </header>
+
+    <!---main start-------------->
+    <main>
+        <!---input and btn--------->
+        <form>
+            <input type="text" class="todo-input input-list">
+            <button class="todo-btn submit-btn" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </form>
+        <section>
+            <!--container section------>
+            <div class="todo-container">
+                <ul class="todo-list"></ul>
+            </div>
+        </section>
+
+    </main>
+    <!-- <div class="todo">
+        <li></li>
+        <button>Delete</button>
+        <button>Checked</button>
+    </div> -->
+    <footer></footer>
+
+    <!--script js----------------->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
